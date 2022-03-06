@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style2.css">   
+</head>
+<script>
+function validate() {
+ var name = document.forms["myform"]["name"].value;
+ if(name==""){
+ alert("Please enter the name");
+ return false;
+ }
+ var email = document.forms["myform"]["email"].value;
+ if(email==""){
+ alert("Please enter the email");
+ return false;
+ }else{
+ var re = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
+ var x=re.test(email);
+ if(x){
+ }else{
+ alert("Email id not in correct format");
+ return false;
+ } 
+  var us = document.getElementById("Uname").value;
+ if(us == "")
+  {
+     document.getElementById("message1").innerHTML = "**Fill Username please";  
+     return false;  
+  }
+  var pw = document.getElementById("Pass").value;  
+  var pw1 = document.getElementById("Pass").value;  
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  } 
+  if(pw1 == "") {  
+     document.getElementById("message2").innerHTML = "**Fill the password please!";  
+     return false;  
+  }
+ /*if(pw==pw1)
+ {
+   return true;
+ } 
+ else
+ {
+    alert("password must be same");
+	return false;
+ } */
+}
+}
+</script>
+<body>
+
+<div class="shadowbox">  
+    <form name="myform" onsubmit="return validate()">
+       <img src="CSK.jpg" width="300" height="200">			  
+        <h2>Create User Page</h2><br>  
+		<label><b>Full Name</b>    
+        </label>    
+        <input type="text" name="name" id="name" placeholder="Full Name">  
+        <br><br> 
+		<label><b>Date of birth</b></label>
+       	<input type="date" id="birthday" name="birthday">
+        <input type="submit">
+         <br><br>		
+        <label><b>City</b></label> 		
+		<input type="text" name="city" id="city" placeholder="City">  
+		<br><br>
+		<label><b>Email Id</b></label>
+		<input type="text" name="email" id="email" placeholder="email"> 
+		<br><br>
+		<label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+		<span id = "message1" style="color:red"> </span> <br><br>  			
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <span id = "message" style="color:red"> </span> <br><br>  			
+		<label><b>Confirm Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+		<span id = "message2" style="color:red"> </span> <br><br>  			
+		<button onsubmit="return validate()">Sign in</button>
+        <br><br> 
+		</form>
+</div>
+</body>
+</html>

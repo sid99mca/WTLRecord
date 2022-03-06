@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<SpinBowlers>
+ <cricketer>
+   <name>R Ashwin</name>
+   <age>35</age>
+   <type>Off-break</type>
+ </cricketer>
+  <cricketer>
+   <name>Shane Warne</name>
+   <age>52</age>
+   <type>Leg-break</type>
+ </cricketer>
+</SpinBowlers>
