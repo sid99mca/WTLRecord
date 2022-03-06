@@ -1,0 +1,29 @@
+{
+  "students": {
+    "student": [
+      {
+        "name": "Siddarth",
+        "age": 22,
+        "subject": "Maths",
+        "gender": "Male"
+      },
+      {
+        "name": "Ajay",
+        "age": 24,
+        "subject": "Science",
+        "gender": "Male"
+      },
+      {
+        "name": "Juliet",
+        "age": 19,
+        "subject": "Arts",
+        "gender": "Female"
+      },
+      {
+        "name": "Lakshmi",
+        "subject": "Computer Science",
+        "gender": "Female"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "SpinBowlers": {
+    "cricketer": [
+      {
+        "name": "R Ashwin",
+        "age": 35,
+        "type": "Off-break"
+      },
+      {
+        "name": "Shane Warne",
+        "age": 52,
+        "type": "Leg-break"
+      }
+    ]
+  }
+}

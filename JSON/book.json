@@ -1,0 +1,22 @@
+{
+  "books": {
+    "book": [
+      {
+        "name": "Anna Karenina",
+        "author": "Leo Tolstoy"
+      },
+      {
+        "name": "Harry Potter and the Half Blood Prince",
+        "author": "JK Rowling"
+      },
+      {
+        "name": "Secret of the Nagas",
+        "author": "Amish"
+      },
+      {
+        "name": "",
+        "author": ""
+      }
+    ]
+  }
+}
